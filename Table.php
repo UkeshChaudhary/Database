@@ -36,9 +36,10 @@ $result = mysqli_query($con,$sql);
     </div>
     <div class="ms-auto p-3 d-flex">
       <a class="btn btn-primary" href="insert.php" role="button">Add Department</a>
-      <form action="" class="p-2">
-      <input type="search" name="searchbox" placeholder="Search">
+      <form action="" class="p-2 m-2">
+        <input type="search" name="searchbox" placeholder="Search">
         <input type="submit" value="Search">
+        <a class="btn btn-danger ml-2" href="login.php" role="button">Log Out</a>
       </form>
     </div>
 </div>
@@ -93,10 +94,10 @@ $result = mysqli_query($con,$sql);
     echo "No record Found";
 }
 // Unset session variables
-session_unset();
+//session_unset();
 
 // End the session
-session_destroy();
+// session_destroy();
 ?>
 </table>
 </div>
